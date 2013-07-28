@@ -20577,6 +20577,50 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1624719360}
+--- !u!1001 &1060971650
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1208662517}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 4b8e4ed6776e046488c7417603b5927f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.19113159
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b8e4ed6776e046488c7417603b5927f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.08764267
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b8e4ed6776e046488c7417603b5927f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -.735431671
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b8e4ed6776e046488c7417603b5927f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b8e4ed6776e046488c7417603b5927f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: .216111705
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b8e4ed6776e046488c7417603b5927f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 4b8e4ed6776e046488c7417603b5927f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: .976368666
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4b8e4ed6776e046488c7417603b5927f, type: 2}
+      propertyPath: m_Name
+      value: CopperSpawn1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4b8e4ed6776e046488c7417603b5927f, type: 2}
+  m_RootGameObject: {fileID: 2019525359}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1082812386
 GameObject:
   m_ObjectHideFlags: 0
@@ -21069,6 +21113,33 @@ Prefab:
   m_RootGameObject: {fileID: 2114801160}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1208662516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1208662517}
+  m_Layer: 0
+  m_Name: Enemies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1208662517
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208662516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -169.328384, y: 13.882946, z: 18.2803726}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2019525360}
+  m_Father: {fileID: 0}
 --- !u!1 &1244916499
 GameObject:
   m_ObjectHideFlags: 0
@@ -22522,6 +22593,7 @@ GameObject:
   - 114: {fileID: 1538155724}
   - 114: {fileID: 1538155731}
   - 114: {fileID: 1538155730}
+  - 114: {fileID: 1538155732}
   m_Layer: 11
   m_Name: LerpzPrefab
   m_TagString: Player
@@ -22728,6 +22800,23 @@ MonoBehaviour:
   lives: 4
   struckSound: {fileID: 0}
   deathSound: {fileID: 0}
+--- !u!114 &1538155732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1538155722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017b715cbd11c9551100b0fa44295342, type: 3}
+  m_Name: 
+  punchSpeed: 1
+  punchHitTime: .200000003
+  punchTime: .400000006
+  punchPosition: {x: 0, y: 0, z: .800000012}
+  punchRadius: 1.29999995
+  punchHitPoints: 1
+  punchSound: {fileID: 0}
 --- !u!1 &1553250175
 GameObject:
   m_ObjectHideFlags: 0
@@ -25105,6 +25194,47 @@ Transform:
   m_Children:
   - {fileID: 1456793935}
   m_Father: {fileID: 1711377098}
+--- !u!1 &2019525359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 4b8e4ed6776e046488c7417603b5927f, type: 2}
+  m_PrefabInternal: {fileID: 1060971650}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2019525360}
+  - 114: {fileID: 2019525361}
+  m_Layer: 0
+  m_Name: CopperSpawn1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2019525360
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 4b8e4ed6776e046488c7417603b5927f, type: 2}
+  m_PrefabInternal: {fileID: 1060971650}
+  m_GameObject: {fileID: 2019525359}
+  m_LocalRotation: {x: 0, y: .216111705, z: 0, w: .976368666}
+  m_LocalPosition: {x: 1.19113159, y: -3.08764267, z: -.735431671}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1208662517}
+--- !u!114 &2019525361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4b8e4ed6776e046488c7417603b5927f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1060971650}
+  m_GameObject: {fileID: 2019525359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eb8028b73a7c4b98a00f4c4332f470c, type: 3}
+  m_Name: 
+  spawnRange: 65
+  gizmoName: Copper
+  enemyPrefab: {fileID: 100002, guid: 95c8a726a89a54de68f6623ec2eb94f4, type: 2}
 --- !u!1 &2039146680
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,8 @@ GameObject:
   - 111: {fileID: 11100000}
   - 143: {fileID: 14300000}
   - 82: {fileID: 8200002}
+  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   m_Layer: 9
   m_Name: Copper
   m_TagString: Enemy
@@ -1048,6 +1050,48 @@ Animation:
 --- !u!1002 &11100001
 EditorExtensionImpl:
   serializedVersion: 6
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4fdd9bcbd1148551100850944295342, type: 3}
+  m_Name: 
+  hitPoints: 3
+  explosionPrefab: {fileID: 400006, guid: e1ed15a74c53c40d195f54f739be7206, type: 2}
+  deadModelPrefab: {fileID: 400048, guid: 30b4bf2d788ee40c1ae72668b63bec96, type: 2}
+  healthPrefab: {fileID: 11400008, guid: 88c3450afdc2e49f2b4692095b5b98a9, type: 2}
+  fuelPrefab: {fileID: 11400008, guid: 51e9ed6567f9d4d73b3811661bd17bb5, type: 2}
+  dropMin: 1
+  dropMax: 3
+  struckSound: {fileID: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860ed9bcbd1148551100850944295342, type: 3}
+  m_Name: 
+  attackTurnTime: .699999988
+  rotateSpeed: 120
+  attackDistance: 17
+  extraRunTime: 2
+  damage: 1
+  attackSpeed: 5
+  attackRotateSpeed: 20
+  idleTime: 1.60000002
+  punchPosition: {x: .400000006, y: 0, z: .699999988}
+  punchRadius: 1.10000002
+  idleSound: {fileID: 0}
+  attackSound: {fileID: 0}
+  target: {fileID: 0}
+  levelStateMachine: {fileID: 0}
 --- !u!137 &13700002
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
