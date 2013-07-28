@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: 91b7b665b1a85481bbf8c098946e5195
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - guiSkin: {fileID: 11400000, guid: 3f4a6e94466ae454cb32ad53d9b7a575, type: 2}
+  - healthImage: {fileID: 2800000, guid: 3848e2827bad54a73ab32761eae9cd82, type: 3}
+  - fuelCellsImage: {fileID: 2800000, guid: bac58055a3a204a1b98243398b3df6ed, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
