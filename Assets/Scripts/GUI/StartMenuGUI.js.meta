@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: c19b46a55212f5248a82b076af303f5d
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - gSkin: {fileID: 11400000, guid: 3f4a6e94466ae454cb32ad53d9b7a575, type: 2}
+  - backdrop: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
