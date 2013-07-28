@@ -86,7 +86,7 @@ function Awake ()
 
 function HidePlayer()
 {
-	GameObject.Find("rootJoint").GetComponent(SkinnedMeshRenderer).enabled = false; // stop rendering the player.
+	GameObject.Find("Lerpz").GetComponent(SkinnedMeshRenderer).enabled = false; // stop rendering the player.
 	isControllable = false;	// disable player controls.
 }
 
@@ -95,7 +95,7 @@ function HidePlayer()
 
 function ShowPlayer()
 {
-	GameObject.Find("rootJoint").GetComponent(SkinnedMeshRenderer).enabled = true; // start rendering the player again.
+	GameObject.Find("Lerpz").GetComponent(SkinnedMeshRenderer).enabled = true; // start rendering the player again.
 	isControllable = true;	// allow player to control the character again.
 }
 
