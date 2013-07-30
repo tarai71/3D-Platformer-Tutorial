@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Name: 
   pickupType: 0
   amount: 3
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 3d64bea8d9a6346f59547d44c291afd6, type: 3}
   soundVolume: 2
 --- !u!135 &13500000
 SphereCollider:

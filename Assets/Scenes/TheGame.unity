@@ -1781,6 +1781,7 @@ GameObject:
   - 23: {fileID: 514}
   - 64: {fileID: 638}
   - 114: {fileID: 954}
+  - 82: {fileID: 1033}
   m_Layer: 8
   m_Name: impoundFence
   m_TagString: Untagged
@@ -1911,6 +1912,7 @@ GameObject:
   - 124: {fileID: 797}
   - 81: {fileID: 653}
   - 114: {fileID: 953}
+  - 82: {fileID: 1032}
   m_Layer: 0
   m_Name: NearCamera
   m_TagString: MainCamera
@@ -3329,44 +3331,44 @@ Transform:
   m_LocalPosition: {x: 84.1057053, y: -19.6488533, z: -69.8092194}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 181}
-  - {fileID: 185}
-  - {fileID: 188}
-  - {fileID: 191}
-  - {fileID: 194}
-  - {fileID: 197}
-  - {fileID: 200}
-  - {fileID: 203}
-  - {fileID: 206}
-  - {fileID: 209}
-  - {fileID: 212}
-  - {fileID: 215}
-  - {fileID: 218}
-  - {fileID: 221}
-  - {fileID: 224}
-  - {fileID: 227}
-  - {fileID: 230}
-  - {fileID: 233}
-  - {fileID: 236}
-  - {fileID: 239}
-  - {fileID: 242}
-  - {fileID: 245}
-  - {fileID: 248}
-  - {fileID: 251}
-  - {fileID: 254}
-  - {fileID: 257}
-  - {fileID: 260}
-  - {fileID: 263}
-  - {fileID: 266}
-  - {fileID: 269}
-  - {fileID: 272}
-  - {fileID: 275}
   - {fileID: 278}
-  - {fileID: 281}
-  - {fileID: 284}
-  - {fileID: 287}
+  - {fileID: 233}
+  - {fileID: 272}
+  - {fileID: 215}
+  - {fileID: 269}
+  - {fileID: 191}
+  - {fileID: 221}
+  - {fileID: 236}
+  - {fileID: 257}
+  - {fileID: 197}
+  - {fileID: 254}
+  - {fileID: 242}
+  - {fileID: 218}
+  - {fileID: 185}
+  - {fileID: 266}
   - {fileID: 290}
+  - {fileID: 181}
+  - {fileID: 230}
+  - {fileID: 206}
+  - {fileID: 245}
+  - {fileID: 281}
+  - {fileID: 287}
+  - {fileID: 209}
+  - {fileID: 227}
+  - {fileID: 203}
+  - {fileID: 284}
+  - {fileID: 194}
   - {fileID: 293}
+  - {fileID: 260}
+  - {fileID: 188}
+  - {fileID: 224}
+  - {fileID: 275}
+  - {fileID: 251}
+  - {fileID: 248}
+  - {fileID: 200}
+  - {fileID: 212}
+  - {fileID: 239}
+  - {fileID: 263}
   m_Father: {fileID: 183}
 --- !u!4 &183
 Transform:
@@ -15436,8 +15438,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15451,8 +15453,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15466,8 +15468,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15481,8 +15483,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15496,8 +15498,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15511,8 +15513,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15526,8 +15528,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15541,8 +15543,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15556,8 +15558,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15571,8 +15573,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15586,8 +15588,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15601,8 +15603,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15616,8 +15618,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15631,8 +15633,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15646,8 +15648,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15661,8 +15663,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15676,8 +15678,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15691,8 +15693,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15706,8 +15708,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15721,8 +15723,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15736,8 +15738,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15751,8 +15753,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15766,8 +15768,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15781,8 +15783,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15796,8 +15798,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15811,8 +15813,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15826,8 +15828,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15841,8 +15843,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15856,8 +15858,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15871,8 +15873,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15886,8 +15888,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15901,8 +15903,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15916,8 +15918,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15931,8 +15933,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15946,8 +15948,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15961,8 +15963,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15976,8 +15978,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15991,8 +15993,8 @@ MonoBehaviour:
   m_Name: 
   pickupType: 1
   amount: 1
-  sound: {fileID: 0}
-  soundVolume: 2
+  sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
+  soundVolume: 10
 --- !u!114 &1031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16019,6 +16021,118 @@ MonoBehaviour:
   fuelCellsImage: {fileID: 2800000, guid: bac58055a3a204a1b98243398b3df6ed, type: 3}
   fuelCellOffset: {x: 0, y: 0}
   fuelCellCountOffset: {x: 391, y: 161}
+--- !u!82 &1032
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 106}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 85144aed27a98410ea26418045671279, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!82 &1033
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 99}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 8d3d780c85380462c9028035bd8ff6f9, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &26236174
 GameObject:
   m_ObjectHideFlags: 0
@@ -16325,7 +16439,7 @@ MonoBehaviour:
   m_Name: 
   pickupType: 0
   amount: 3
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 3d64bea8d9a6346f59547d44c291afd6, type: 3}
   soundVolume: 2
 --- !u!1 &127207158
 GameObject:
@@ -17167,7 +17281,7 @@ AudioSource:
   m_GameObject: {fileID: 262873423}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 475ba4da5b7f147e6b0ae849624d6020, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -17937,7 +18051,7 @@ AudioSource:
   m_GameObject: {fileID: 403277640}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 475ba4da5b7f147e6b0ae849624d6020, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -18927,7 +19041,7 @@ MonoBehaviour:
   m_Name: 
   pickupType: 0
   amount: 3
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 3d64bea8d9a6346f59547d44c291afd6, type: 3}
   soundVolume: 2
 --- !u!1 &652770703
 GameObject:
@@ -18956,7 +19070,7 @@ AudioSource:
   m_GameObject: {fileID: 652770703}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 475ba4da5b7f147e6b0ae849624d6020, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -19938,6 +20052,10 @@ Prefab:
       propertyPath: jumpHeight
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: e9e93ebdc60404d8e8dc668c3a500f4b, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 475ba4da5b7f147e6b0ae849624d6020, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e9e93ebdc60404d8e8dc668c3a500f4b, type: 2}
   m_RootGameObject: {fileID: 652770703}
@@ -20923,6 +21041,26 @@ Prefab:
       propertyPath: colorAnimation[4].rgba
       value: 4212199181
       objectReference: {fileID: 0}
+    - target: {fileID: 11400008, guid: 453db032211cac247b880e80eef945fc, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 453db032211cac247b880e80eef945fc, type: 2}
+      propertyPath: deathSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 2f8d039c29c824da4aa704ec668c54e1, type: 3}
+    - target: {fileID: 11400006, guid: 453db032211cac247b880e80eef945fc, type: 2}
+      propertyPath: struckSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 8ab2e64909eb94f9fb246ac210ae6a0b, type: 3}
+    - target: {fileID: 8200000, guid: 453db032211cac247b880e80eef945fc, type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 202ea125479a84aa4a095a52696428b7, type: 3}
+    - target: {fileID: 8200000, guid: 453db032211cac247b880e80eef945fc, type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 453db032211cac247b880e80eef945fc, type: 2}
   m_RootGameObject: {fileID: 1538155722}
@@ -21063,7 +21201,7 @@ MonoBehaviour:
   m_Name: 
   pickupType: 0
   amount: 3
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 3d64bea8d9a6346f59547d44c291afd6, type: 3}
   soundVolume: 2
 --- !u!1001 &1201713686
 Prefab:
@@ -21486,7 +21624,7 @@ MonoBehaviour:
   m_Name: 
   pickupType: 0
   amount: 3
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 3d64bea8d9a6346f59547d44c291afd6, type: 3}
   soundVolume: 2
 --- !u!1 &1347191986
 GameObject:
@@ -22592,8 +22730,8 @@ GameObject:
   - 82: {fileID: 1538155725}
   - 114: {fileID: 1538155724}
   - 114: {fileID: 1538155731}
+  - 114: {fileID: 1538155733}
   - 114: {fileID: 1538155730}
-  - 114: {fileID: 1538155732}
   m_Layer: 11
   m_Name: LerpzPrefab
   m_TagString: Player
@@ -22635,11 +22773,11 @@ AudioSource:
   m_GameObject: {fileID: 1538155722}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 202ea125479a84aa4a095a52696428b7, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
@@ -22798,25 +22936,26 @@ MonoBehaviour:
   health: 6
   maxHealth: 6
   lives: 4
-  struckSound: {fileID: 0}
-  deathSound: {fileID: 0}
---- !u!114 &1538155732
+  struckSound: {fileID: 8300000, guid: 8ab2e64909eb94f9fb246ac210ae6a0b, type: 3}
+  deathSound: {fileID: 8300000, guid: 2f8d039c29c824da4aa704ec668c54e1, type: 3}
+--- !u!114 &1538155733
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11400008, guid: 453db032211cac247b880e80eef945fc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1122153438}
   m_GameObject: {fileID: 1538155722}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 017b715cbd11c9551100b0fa44295342, type: 3}
   m_Name: 
   punchSpeed: 1
-  punchHitTime: .200000003
-  punchTime: .400000006
+  punchHitTime: .150000006
+  punchTime: .25
   punchPosition: {x: 0, y: 0, z: .800000012}
   punchRadius: 1.29999995
   punchHitPoints: 1
-  punchSound: {fileID: 0}
+  punchSound: {fileID: 8300000, guid: 5967f799f913844a5bc071e94868c7d4, type: 3}
 --- !u!1 &1553250175
 GameObject:
   m_ObjectHideFlags: 0
@@ -22844,7 +22983,7 @@ AudioSource:
   m_GameObject: {fileID: 1553250175}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 475ba4da5b7f147e6b0ae849624d6020, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -24150,7 +24289,7 @@ AudioSource:
   m_GameObject: {fileID: 1804856461}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 475ba4da5b7f147e6b0ae849624d6020, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -24386,7 +24525,7 @@ MonoBehaviour:
   m_Name: 
   pickupType: 0
   amount: 3
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 3d64bea8d9a6346f59547d44c291afd6, type: 3}
   soundVolume: 2
 --- !u!1 &1812654528
 GameObject:
@@ -24415,7 +24554,7 @@ AudioSource:
   m_GameObject: {fileID: 1812654528}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 475ba4da5b7f147e6b0ae849624d6020, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -25418,12 +25557,12 @@ Transform:
   m_LocalPosition: {x: -201.169769, y: 55.5218277, z: 173.179321}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2135792918}
-  - {fileID: 1808538319}
-  - {fileID: 1344364093}
-  - {fileID: 1179632690}
-  - {fileID: 123570875}
   - {fileID: 640226098}
+  - {fileID: 123570875}
+  - {fileID: 1344364093}
+  - {fileID: 1808538319}
+  - {fileID: 1179632690}
+  - {fileID: 2135792918}
   m_Father: {fileID: 0}
 --- !u!1 &2092849497
 GameObject:
@@ -25860,5 +25999,5 @@ MonoBehaviour:
   m_Name: 
   pickupType: 0
   amount: 3
-  sound: {fileID: 0}
+  sound: {fileID: 8300000, guid: 3d64bea8d9a6346f59547d44c291afd6, type: 3}
   soundVolume: 2

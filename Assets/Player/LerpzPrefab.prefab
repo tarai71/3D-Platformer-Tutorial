@@ -700,6 +700,7 @@ GameObject:
   - 82: {fileID: 8200000}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400006}
+  - 114: {fileID: 11400008}
   m_Layer: 11
   m_Name: LerpzPrefab
   m_TagString: Player
@@ -2422,6 +2423,23 @@ MonoBehaviour:
   lives: 4
   struckSound: {fileID: 0}
   deathSound: {fileID: 0}
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100090}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017b715cbd11c9551100b0fa44295342, type: 3}
+  m_Name: 
+  punchSpeed: 1
+  punchHitTime: .150000006
+  punchTime: .25
+  punchPosition: {x: 0, y: 0, z: .800000012}
+  punchRadius: 1.29999995
+  punchHitPoints: 1
+  punchSound: {fileID: 8300000, guid: 5967f799f913844a5bc071e94868c7d4, type: 3}
 --- !u!119 &11900000
 Projector:
   m_ObjectHideFlags: 1

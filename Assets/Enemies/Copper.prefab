@@ -908,7 +908,7 @@ AudioSource:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   serializedVersion: 3
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6bad9ed9fc023404e8eaaabd6d2db940, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   fuelPrefab: {fileID: 11400008, guid: 51e9ed6567f9d4d73b3811661bd17bb5, type: 2}
   dropMin: 1
   dropMax: 3
-  struckSound: {fileID: 0}
+  struckSound: {fileID: 8300000, guid: adbc78d7a99da4ab2aa6a51670c1ca7d, type: 3}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1088,8 +1088,8 @@ MonoBehaviour:
   idleTime: 1.60000002
   punchPosition: {x: .400000006, y: 0, z: .699999988}
   punchRadius: 1.10000002
-  idleSound: {fileID: 0}
-  attackSound: {fileID: 0}
+  idleSound: {fileID: 8300000, guid: 6bad9ed9fc023404e8eaaabd6d2db940, type: 3}
+  attackSound: {fileID: 8300000, guid: ec6d06a944c104b588b33b0fba457df6, type: 3}
   target: {fileID: 0}
   levelStateMachine: {fileID: 0}
 --- !u!137 &13700002
