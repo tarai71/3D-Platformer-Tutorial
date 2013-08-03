@@ -1,0 +1,24 @@
+#pragma strict
+
+function Start () {
+
+}
+
+function Update () {
+
+}
+
+private var playerLink : ThirdPersonStatus;
+function OnTriggerEnter (col : Collider)
+{
+	playerLink=col.GetComponent(ThirdPersonStatus);
+	
+	if (!playerLink) // not the player.
+	{
+		return;
+	}
+	else
+	{
+		playerLink.LevelCompleted();
+	}
+}	
