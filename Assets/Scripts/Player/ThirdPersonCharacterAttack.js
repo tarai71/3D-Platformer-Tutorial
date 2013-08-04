@@ -7,6 +7,8 @@ var punchHitPoints = 1;
 
 var punchSound : AudioClip;
 
+var punchJoystickButton : Joystick;
+
 private var busy = false; 
 
 function Start ()
@@ -17,7 +19,7 @@ function Start ()
 function Update ()
 {
 	var controller : ThirdPersonController = GetComponent(ThirdPersonController); 
-	if(!busy && Input.GetButtonDown ("Fire1") && controller.IsGroundedWithTimeout() && !controller.IsMoving())
+	if(!busy && punchJoystickButton.GetButtonDown()/*Input.GetButtonDown ("Fire1")*/ && controller.IsGroundedWithTimeout() && !controller.IsMoving())
 	{	
 		SendMessage ("DidPunch");
 		busy = true;

@@ -55,19 +55,19 @@ function OnGUI ()
 	GUI.matrix = Matrix4x4.TRS (Vector3(0, 0, 0), Quaternion.identity, Vector3 (Screen.height / nativeVerticalResolution, Screen.height / nativeVerticalResolution, 1)); 
 
 	// Health & lives info.
-	DrawImageBottomAligned( healthImageOffset, healthImage); // main image.
+	DrawImageTopAligned( healthImageOffset, healthImage); // main image.
 
 	// now for the pie chart. This is where a decent graphics package comes in handy to check relative sizes and offsets.
 	var pieImage = healthPieImages[healthPieIndex-1];
-	DrawImageBottomAligned( healthPieImageOffset, pieImage );
+	DrawImageTopAligned( healthPieImageOffset, pieImage );
 	
 	// Displays lives left as a number.	
-	DrawLabelBottomAligned( livesCountOffset, playerInfo.lives.ToString() );	
+	DrawLabelTopAligned( livesCountOffset, playerInfo.lives.ToString() );	
 	
 	// Now it's the fuel cans' turn. We want this aligned to the lower-right corner of the screen:
-	DrawImageBottomRightAligned( fuelCellOffset, fuelCellsImage);
+	DrawImageTopRightAligned( fuelCellOffset, fuelCellsImage);
 
-	DrawLabelBottomRightAligned( fuelCellCountOffset, itemsLeft.ToString() );
+	DrawLabelTopRightAligned( fuelCellCountOffset, itemsLeft.ToString() );
 }
 
 function DrawImageBottomAligned (pos : Vector2, image : Texture2D)
@@ -90,4 +90,26 @@ function DrawLabelBottomRightAligned (pos : Vector2, text : String)
 {
 	var scaledResolutionWidth = nativeVerticalResolution / Screen.height * Screen.width;
 	GUI.Label(Rect (scaledResolutionWidth - pos.x, nativeVerticalResolution - pos.y, 100, 100), text);
+}
+
+function DrawImageTopAligned (pos : Vector2, image : Texture2D)
+{
+	GUI.Label(Rect (pos.x, pos.y, image.width, image.height), image);
+}
+
+function DrawLabelTopAligned (pos : Vector2, text : String)
+{
+	GUI.Label(Rect (pos.x, pos.y, 100, 100), text);
+}
+
+function DrawImageTopRightAligned (pos : Vector2, image : Texture2D)
+{
+	var scaledResolutionWidth = nativeVerticalResolution / Screen.height * Screen.width;
+	GUI.Label(Rect (scaledResolutionWidth - pos.x - image.width, pos.y, image.width, image.height), image);
+}
+
+function DrawLabelTopRightAligned (pos : Vector2, text : String)
+{
+	var scaledResolutionWidth = nativeVerticalResolution / Screen.height * Screen.width;
+	GUI.Label(Rect (scaledResolutionWidth - pos.x, pos.y, 100, 100), text);
 }

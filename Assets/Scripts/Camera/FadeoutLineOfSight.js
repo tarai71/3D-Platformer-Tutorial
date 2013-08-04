@@ -89,7 +89,7 @@ function LateUpdate () {
 	var fadeDelta = fadeSpeed * Time.deltaTime;
 	for (i=0;i<fadedOutObjects.Count;i++)
 	{
-		var fade = fadedOutObjects[i];
+		var fade : FadeoutLOSInfo = fadedOutObjects[i];
 		// Fade out up to minimum alpha value
 		if (fade.needFadeOut)
 		{

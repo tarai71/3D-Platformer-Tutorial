@@ -153,7 +153,7 @@ function Attack ()
 	{
 		time += Time.deltaTime;
 		angle = Mathf.Abs(RotateTowardsPosition(target.position, rotateSpeed));
-		move = Mathf.Clamp01((90 - angle) / 90);
+		var move = Mathf.Clamp01((90 - angle) / 90);
 		
 		// depending on the angle, start moving
 		animation["attackrun"].weight = animation["attackrun"].speed = move;

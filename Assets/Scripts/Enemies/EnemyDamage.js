@@ -56,7 +56,7 @@ function Die ()
 	var toDrop = Random.Range(dropMin, dropMax + 1);	// how many shall we drop?
 	for (var i=0;i<toDrop;i++)
 	{
-		direction = Random.onUnitSphere;	// pick a random direction to throw the pickup.
+		var direction = Random.onUnitSphere;	// pick a random direction to throw the pickup.
 		if(direction.y < 0)
 			direction.y = -direction.y;	// make sure the pickup isn't thrown downwards
 		

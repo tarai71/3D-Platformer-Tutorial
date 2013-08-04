@@ -29,7 +29,7 @@ function UnlockLevelExit()
 {
 	mainCamera.GetComponent(AudioListener).enabled = false;
 	
-	unlockedCamera.active = true;
+	unlockedCamera.SetActive(true);
 	unlockedCamera.GetComponent(AudioListener).enabled = true;
 	
 	if (unlockedSound)
@@ -39,19 +39,19 @@ function UnlockLevelExit()
 	
 	yield WaitForSeconds(1);
 	
-	exitGateway.active = false;	// ... フェンスが消灯します
+	exitGateway.SetActive(false);	// ... フェンスが消灯します
 	
-	yield WaitForSeconds(0.2);	//... 一瞬停止します...
-	exitGateway.active = true;	//...フェンスが再び点灯します...
-	yield WaitForSeconds(0.2);	//... 一瞬停止します...
-	exitGateway.active = false;	//... フェンスは永久に消え去ります！
+	yield WaitForSeconds(0.2);		//... 一瞬停止します...
+	exitGateway.SetActive(true);	//...フェンスが再び点灯します...
+	yield WaitForSeconds(0.2);		//... 一瞬停止します...
+	exitGateway.SetActive(false);	//... フェンスは永久に消え去ります！
 
 	levelGoal.GetComponent(MeshCollider).isTrigger = true;
 	
 	yield WaitForSeconds(4); // give the player time to see the result.
 
 	// swap the cameras back.
-	unlockedCamera.active = false; // this lets the NearCamera get the screen all to itself.
+	unlockedCamera.SetActive(false); // this lets the NearCamera get the screen all to itself.
 	unlockedCamera.GetComponent(AudioListener).enabled = false;
 	mainCamera.GetComponent(AudioListener).enabled = true;
 }
@@ -59,7 +59,7 @@ function UnlockLevelExit()
 function LevelCompleted()
 {
 	mainCamera.GetComponent(AudioListener).enabled = false;
-	levelCompletedCamera.active = true;
+	levelCompletedCamera.SetActive(true);
 	levelCompletedCamera.GetComponent(AudioListener).enabled = true;
 
 	playerLink.GetComponent(ThirdPersonController).SendMessage("HidePlayer");

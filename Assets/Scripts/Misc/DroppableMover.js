@@ -13,8 +13,8 @@ function Bounce (force : Vector3)
 function Update ()
 {
 	velocity.y -= gravity * Time.deltaTime;
-	moveThisFrame = velocity * Time.deltaTime;
-	distanceThisFrame = moveThisFrame.magnitude;
+	var moveThisFrame = velocity * Time.deltaTime;
+	var distanceThisFrame = moveThisFrame.magnitude;
 	
 	if (Physics.Raycast(position, moveThisFrame, distanceThisFrame, collisionMask))
 	{

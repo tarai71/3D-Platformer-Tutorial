@@ -99,7 +99,7 @@ function Die ()
 		Application.LoadLevel("GameOver");	
 	
 	// If we've reached here, the player still has lives remaining, so respawn.
-	respawnPosition = Respawn.currentRespawn.transform.position;
+	var respawnPosition = Respawn.currentRespawn.transform.position;
 	Camera.main.transform.position = respawnPosition - (transform.forward * 4) + Vector3.up;	// reset camera too
 	// Hide the player briefly to give the death sound time to finish...
 	SendMessage("HidePlayer");

@@ -25,6 +25,9 @@ var canJump = true;
 var canControlDescent = true;
 var canWallJump = false;
 
+var moveJoystick : Joystick;
+var jumpJoystickButton : Joystick;
+
 private var jumpRepeatTime = 0.05;
 private var wallJumpTimeout = 0.15;
 private var jumpTimeout = 0.15;
@@ -116,6 +119,9 @@ function UpdateSmoothedMovementDirection ()
 
 	var v = Input.GetAxisRaw("Vertical");
 	var h = Input.GetAxisRaw("Horizontal");
+
+v = moveJoystick.position.y;
+h = moveJoystick.position.x;
 
 	// Are we moving backwards or looking backwards
 	if (v < -0.2)
@@ -260,8 +266,8 @@ function ApplyGravity ()
 	if (isControllable)	// don't move player at all if not controllable.
 	{
 		// Apply gravity
-		var jumpButton = Input.GetButton("Jump");
-		
+		var jumpButton = Input.GetButton("Jump") || jumpJoystickButton.IsFingerDown();
+				
 		// * When falling down we use controlledDescentGravity (only when holding down jump)
 		var controlledDescent = canControlDescent && verticalSpeed <= 0.0 && jumpButton && jumping;
 		
@@ -312,7 +318,7 @@ function Update() {
 		Input.ResetInputAxes();
 	}
 
-	if (Input.GetButtonDown ("Jump"))
+	if (Input.GetButtonDown ("Jump") || jumpJoystickButton.GetButtonDown())
 	{
 		lastJumpButtonTime = Time.time;
 	}
@@ -461,7 +467,7 @@ function IsGroundedWithTimeout ()
 function IsControlledDescent ()
 {
 	// * When falling down we use controlledDescentGravity (only when holding down jump)
-	var jumpButton = Input.GetButton("Jump");
+	var jumpButton = Input.GetButton("Jump") || jumpJoystickButton.IsFingerDown();
 	return canControlDescent && verticalSpeed <= 0.0 && jumpButton && jumping;
 }
 
