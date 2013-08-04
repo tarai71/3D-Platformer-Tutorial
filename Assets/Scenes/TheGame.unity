@@ -14929,6 +14929,7 @@ MonoBehaviour:
   lineOfSightMask:
     serializedVersion: 2
     m_Bits: 0
+  cameraJoystickButton: {fileID: 1344738187}
 --- !u!114 &954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16025,7 +16026,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 45ad01d7526614288b1a7bb7c4e17b25, type: 3}
   - {fileID: 2800000, guid: 07d584634b8bf425482ecc15db592faa, type: 3}
   - {fileID: 2800000, guid: 2021c8bdcf266496398d6c9a2b1b2bd5, type: 3}
-  healthPieImageOffset: {x: 10, y: 147}
+  healthPieImageOffset: {x: 10, y: 10}
   livesCountOffset: {x: 425, y: 160}
   fuelCellsImage: {fileID: 2800000, guid: bac58055a3a204a1b98243398b3df6ed, type: 3}
   fuelCellOffset: {x: 0, y: 0}
@@ -18437,7 +18438,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 435263009}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .800000012, y: .100000001, z: 0}
+  m_LocalPosition: {x: .800000012, y: .0500000007, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 845443538}
@@ -20139,6 +20140,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1344738186}
   - {fileID: 1536307118}
   - {fileID: 435263010}
   - {fileID: 1725501329}
@@ -21869,6 +21871,74 @@ MonoBehaviour:
   amount: 3
   sound: {fileID: 8300000, guid: 3d64bea8d9a6346f59547d44c291afd6, type: 3}
   soundVolume: 2
+--- !u!1 &1344738185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1344738186}
+  - 131: {fileID: 1344738188}
+  - 114: {fileID: 1344738187}
+  m_Layer: 0
+  m_Name: camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1344738186
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344738185}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .115000002, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 845443538}
+--- !u!114 &1344738187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344738185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fb10c595af974ea6ba0313a749d5c55, type: 3}
+  m_Name: 
+  touchPad: 1
+  touchZone:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  deadZone: {x: 0, y: 0}
+  normalize: 0
+  position: {x: 0, y: 0}
+  tapCount: 0
+--- !u!131 &1344738188
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1344738185}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: ab5bb3eb247a4492fa9900f6ac0db050, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .501960814}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 10
+    y: 10
+    width: 80
+    height: 80
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
 --- !u!1 &1347191986
 GameObject:
   m_ObjectHideFlags: 0
@@ -22982,7 +23052,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1536307117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0500000007, y: .100000001, z: 0}
+  m_LocalPosition: {x: .0500000007, y: .119999997, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 845443538}
@@ -23020,8 +23090,8 @@ GUITexture:
     serializedVersion: 2
     x: 10
     y: 10
-    width: 100
-    height: 100
+    width: 80
+    height: 80
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
@@ -23043,7 +23113,6 @@ GameObject:
   - 114: {fileID: 1538155731}
   - 114: {fileID: 1538155733}
   - 114: {fileID: 1538155730}
-  - 131: {fileID: 1538155734}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -23271,25 +23340,6 @@ MonoBehaviour:
   punchHitPoints: 1
   punchSound: {fileID: 8300000, guid: 5967f799f913844a5bc071e94868c7d4, type: 3}
   punchJoystickButton: {fileID: 1725501330}
---- !u!131 &1538155734
-GUITexture:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1538155722}
-  m_Enabled: 1
-  m_Texture: {fileID: 0}
-  m_Color: {r: .5, g: .5, b: .5, a: .5}
-  m_PixelInset:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  m_LeftBorder: 0
-  m_RightBorder: 0
-  m_TopBorder: 0
-  m_BottomBorder: 0
 --- !u!1 &1553250175
 GameObject:
   m_ObjectHideFlags: 0
@@ -24169,7 +24219,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1725501328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .174999997, y: .100000001, z: 0}
+  m_LocalPosition: {x: .174999997, y: .119999997, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 845443538}
@@ -24207,8 +24257,8 @@ GUITexture:
     serializedVersion: 2
     x: 10
     y: 10
-    width: 100
-    height: 100
+    width: 80
+    height: 80
   m_LeftBorder: 0
   m_RightBorder: 0
   m_TopBorder: 0
