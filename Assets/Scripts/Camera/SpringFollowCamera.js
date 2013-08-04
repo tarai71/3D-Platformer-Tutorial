@@ -9,6 +9,8 @@ var snapLag = 0.3;
 var clampHeadPositionScreenSpace = 0.75;
 var lineOfSightMask : LayerMask = 0;
 
+var cameraJoystickButton : Joystick;
+
 private var isSnapping = false;
 private var headOffset = Vector3.zero;
 private var centerOffset = Vector3.zero;
@@ -55,7 +57,7 @@ function LateUpdate () {
 	}
 	
 	// We start snapping when user pressed Fire2!
-	if (Input.GetButton("Fire2") && !isSnapping)
+	if ((Input.GetButton("Fire2") || cameraJoystickButton.IsFingerDown())&& !isSnapping)
 	{
 		velocity = Vector3.zero;
 		isSnapping = true;

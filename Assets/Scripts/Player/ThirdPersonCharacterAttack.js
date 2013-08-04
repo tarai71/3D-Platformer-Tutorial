@@ -19,7 +19,7 @@ function Start ()
 function Update ()
 {
 	var controller : ThirdPersonController = GetComponent(ThirdPersonController); 
-	if(!busy && punchJoystickButton.GetButtonDown()/*Input.GetButtonDown ("Fire1")*/ && controller.IsGroundedWithTimeout() && !controller.IsMoving())
+	if(!busy && (punchJoystickButton.GetButtonDown() ||Input.GetButtonDown ("Fire1")) && controller.IsGroundedWithTimeout() && !controller.IsMoving())
 	{	
 		SendMessage ("DidPunch");
 		busy = true;

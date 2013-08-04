@@ -117,11 +117,13 @@ function UpdateSmoothedMovementDirection ()
 	// Always orthogonal to the forward vector
 	var right = Vector3(forward.z, 0, -forward.x);
 
-	var v = Input.GetAxisRaw("Vertical");
+	var v = Input.GetAxisRaw("Vertical") ;
 	var h = Input.GetAxisRaw("Horizontal");
 
-v = moveJoystick.position.y;
-h = moveJoystick.position.x;
+	if(Mathf.Abs(v) < Mathf.Abs(moveJoystick.position.y))
+		v = moveJoystick.position.y;
+	if(Mathf.Abs(h) < Mathf.Abs(moveJoystick.position.x))
+		h = moveJoystick.position.x;
 
 	// Are we moving backwards or looking backwards
 	if (v < -0.2)
