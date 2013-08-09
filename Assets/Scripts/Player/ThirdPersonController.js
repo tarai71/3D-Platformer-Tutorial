@@ -77,6 +77,7 @@ private var lean = 0.0;
 private var slammed = false;
 
 private var isControllable = true;
+private var virtualPad : GameObject;
 
 function SetControllable(flag : boolean)
 {
@@ -86,6 +87,10 @@ function SetControllable(flag : boolean)
 function Awake ()
 {
 	moveDirection = transform.TransformDirection(Vector3.forward);
+
+	virtualPad = GameObject.Find("VirtualPad");
+	if (!virtualPad)
+		Debug.Log("No link to virtualPad.");
 }
 
 // This next function responds to the "HidePlayer" message by hiding the player. 
@@ -96,6 +101,7 @@ function HidePlayer()
 {
 	GameObject.Find("Lerpz").GetComponent(SkinnedMeshRenderer).enabled = false; // stop rendering the player.
 	isControllable = false;	// disable player controls.
+	virtualPad.SetActive(false);
 }
 
 // This is a complementary function to the above. We don't use it in the tutorial, but it's included for
@@ -105,6 +111,7 @@ function ShowPlayer()
 {
 	GameObject.Find("Lerpz").GetComponent(SkinnedMeshRenderer).enabled = true; // start rendering the player again.
 	isControllable = true;	// allow player to control the character again.
+	virtualPad.SetActive(true);
 }
 
 
