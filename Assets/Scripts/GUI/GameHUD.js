@@ -2,6 +2,7 @@
 
 // This script handles the in-game HUD, showing the lives, number of fuel cells remaining, etc.
 
+var style: GUIStyle;
 var guiSkin: GUISkin;
 var nativeVerticalResolution = 1200.0;
 
@@ -23,20 +24,36 @@ var fuelCellOffset = Vector2(0, 0);
 // The counter text inside the fuel cell image
 var fuelCellCountOffset = Vector2(391, 161);
 
+var timerOffset = Vector2(300, 0);
+
 private var playerInfo : ThirdPersonStatus;
+private var timerInfo : TimerController;
 
 // Cache link to player's state management script for later use.
 function Awake()
 {
 	playerInfo = FindObjectOfType(ThirdPersonStatus);
-
 	if (!playerInfo)
 		Debug.Log("No link to player's state manager.");
+
+	timerInfo = FindObjectOfType(TimerController); 
+	if (!timerInfo)
+		Debug.Log("No link to timer info");
+}
+
+function Start()
+{
+	if(Application.loadedLevelName == "TimeAttack")
+	{
+		if(timerInfo)
+		{
+			timerInfo.StartTimer();
+		}
+	}
 }
 
 function OnGUI ()
 {
-
 	var itemsLeft = playerInfo.GetRemainingItems();	// fetch items remaining -- the fuel cans. This can be a negative number!
 
 	// Similarly, health needs to be clamped to the number of pie segments we can show.
@@ -68,6 +85,27 @@ function OnGUI ()
 	DrawImageTopRightAligned( fuelCellOffset, fuelCellsImage);
 
 	DrawLabelTopRightAligned( fuelCellCountOffset, itemsLeft.ToString() );
+
+	if(Application.loadedLevelName == "TimeAttack")
+	{
+		if(timerInfo)
+		{
+			DrawLabelTopAligned( timerOffset, "Time : " + Mathf.Round(timerInfo.GetAttackTime()*100)/100 );
+			
+			var scaledResolutionWidth = nativeVerticalResolution / Screen.height * Screen.width;
+			if(timerInfo.GetCountDown() > 0f)
+			{
+				if(parseInt(timerInfo.GetCountDown()) > 0)
+				{
+					GUI.Label(Rect (scaledResolutionWidth/2f-120f, nativeVerticalResolution/2f-120f, 300f, 300f), parseInt(timerInfo.GetCountDown()).ToString(), style);
+				}
+				else
+				{
+					GUI.Label(Rect (scaledResolutionWidth/2f-120f, nativeVerticalResolution/2f-120f, 300f, 300f), "GO!", style);
+				}
+			}
+		}
+	}
 }
 
 function DrawImageBottomAligned (pos : Vector2, image : Texture2D)
@@ -99,7 +137,7 @@ function DrawImageTopAligned (pos : Vector2, image : Texture2D)
 
 function DrawLabelTopAligned (pos : Vector2, text : String)
 {
-	GUI.Label(Rect (pos.x, pos.y, 100, 100), text);
+	GUI.Label(Rect (pos.x, pos.y, 400, 100), text);
 }
 
 function DrawImageTopRightAligned (pos : Vector2, image : Texture2D)

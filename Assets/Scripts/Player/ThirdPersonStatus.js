@@ -12,12 +12,16 @@ var struckSound: AudioClip;
 var deathSound: AudioClip;
 
 private var levelStateMachine : LevelStatus;		// link to script that handles the level-complete sequence.
+private var timerInfo : TimerController;
 
 private var remainingItems : int;	// total number to pick up on this level. Grabbed from LevelStatus.
 
 
 function Awake()
 {
+	timerInfo = FindObjectOfType(TimerController); 
+	if (!timerInfo)
+		Debug.Log("No link to timer info");
 	
 	levelStateMachine = FindObjectOfType(LevelStatus);
 	if (!levelStateMachine)
@@ -119,4 +123,5 @@ function Die ()
 function LevelCompleted()
 {
 	levelStateMachine.LevelCompleted();
+	timerInfo.StopTimer();
 }

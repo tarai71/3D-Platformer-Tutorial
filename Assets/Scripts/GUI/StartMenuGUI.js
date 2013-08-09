@@ -30,10 +30,16 @@ function OnGUI()
 	
 	GUI.Label ( Rect( (Screen.width/2)-197, 50, 400, 100), "Lerpz Escapes", "mainMenuTitle");
 
-	if (GUI.Button( Rect( (Screen.width/2)-70, Screen.height - 160, 140, 70), "Play"))
+	if (GUI.Button( Rect( (Screen.width/2)-70, Screen.height - 240, 140, 70), "Play"))
 	{
 		isLoading = true;
 		Application.LoadLevel("TheGame"); // load the game level.
+	}
+	
+	if (GUI.Button( Rect( (Screen.width/2)-170, Screen.height - 160, 340, 70), "TimeAttack"))
+	{
+		isLoading = true;
+		Application.LoadLevel("TimeAttack"); // load the game level.
 	}
 
 	var isWebPlayer = (Application.platform == RuntimePlatform.OSXWebPlayer ||

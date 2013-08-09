@@ -78,6 +78,11 @@ private var slammed = false;
 
 private var isControllable = true;
 
+function SetControllable(flag : boolean)
+{
+	isControllable = flag;
+}
+
 function Awake ()
 {
 	moveDirection = transform.TransformDirection(Vector3.forward);

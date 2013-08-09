@@ -3371,6 +3371,7 @@ Transform:
   - {fileID: 287}
   - {fileID: 290}
   - {fileID: 293}
+  - {fileID: 298}
   m_Father: {fileID: 183}
 --- !u!4 &183
 Transform:
@@ -4720,7 +4721,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 88}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -108.617699, y: 9.68642616, z: -4.51891804}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 322}
@@ -4748,7 +4749,7 @@ Transform:
   - {fileID: 301}
   - {fileID: 300}
   - {fileID: 299}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 182}
 --- !u!4 &299
 Transform:
   m_ObjectHideFlags: 0
@@ -13244,7 +13245,7 @@ MonoBehaviour:
   mainCamera: {fileID: 106}
   unlockedCamera: {fileID: 916988203}
   levelCompletedCamera: {fileID: 1755250949}
-  itemsNeeded: 2
+  itemsNeeded: 20
 --- !u!1001 &915
 Prefab:
   m_ObjectHideFlags: 0
@@ -16031,6 +16032,7 @@ MonoBehaviour:
   fuelCellsImage: {fileID: 2800000, guid: bac58055a3a204a1b98243398b3df6ed, type: 3}
   fuelCellOffset: {x: 0, y: 0}
   fuelCellCountOffset: {x: 391, y: 161}
+  timerOffset: {x: 300, y: 0}
 --- !u!82 &1032
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16169,7 +16171,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 86}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64fe2360635c5614fb56d7b72abb55bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 4bae38961ee3aab4db79c642f56fcf82, type: 3}
   m_Name: 
 --- !u!1 &26236174
 GameObject:
@@ -18450,7 +18452,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 435263009}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fb10c595af974ea6ba0313a749d5c55, type: 3}
+  m_Script: {fileID: 11500000, guid: 987ab15eb27a2cc4ebc618b4de00a55b, type: 3}
   m_Name: 
   touchPad: 0
   touchZone:
@@ -18470,7 +18472,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 435263009}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: ab5bb3eb247a4492fa9900f6ac0db050, type: 3}
+  m_Texture: {fileID: 2800000, guid: 31b066fa7b4885041a563e6da37f17f3, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -21907,7 +21909,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1344738185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fb10c595af974ea6ba0313a749d5c55, type: 3}
+  m_Script: {fileID: 11500000, guid: 987ab15eb27a2cc4ebc618b4de00a55b, type: 3}
   m_Name: 
   touchPad: 1
   touchZone:
@@ -21927,7 +21929,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1344738185}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: ab5bb3eb247a4492fa9900f6ac0db050, type: 3}
+  m_Texture: {fileID: 2800000, guid: 31b066fa7b4885041a563e6da37f17f3, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .501960814}
   m_PixelInset:
     serializedVersion: 2
@@ -23064,7 +23066,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1536307117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fb10c595af974ea6ba0313a749d5c55, type: 3}
+  m_Script: {fileID: 11500000, guid: 987ab15eb27a2cc4ebc618b4de00a55b, type: 3}
   m_Name: 
   touchPad: 1
   touchZone:
@@ -23084,7 +23086,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1536307117}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: ab5bb3eb247a4492fa9900f6ac0db050, type: 3}
+  m_Texture: {fileID: 2800000, guid: 31b066fa7b4885041a563e6da37f17f3, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -23112,7 +23114,6 @@ GameObject:
   - 114: {fileID: 1538155724}
   - 114: {fileID: 1538155731}
   - 114: {fileID: 1538155733}
-  - 114: {fileID: 1538155730}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -23290,21 +23291,6 @@ Animation:
   m_UserAABB:
     m_Center: {x: .00545340776, y: .974712431, z: .0536858439}
     m_Extent: {x: .953361988, y: 1.12799978, z: 1.16509962}
---- !u!114 &1538155730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1538155722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5aefd9bcbd1148551100850944295342, type: 3}
-  m_Name: 
-  health: 6
-  maxHealth: 6
-  lives: 4
-  struckSound: {fileID: 0}
-  deathSound: {fileID: 0}
 --- !u!114 &1538155731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24231,7 +24217,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1725501328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fb10c595af974ea6ba0313a749d5c55, type: 3}
+  m_Script: {fileID: 11500000, guid: 987ab15eb27a2cc4ebc618b4de00a55b, type: 3}
   m_Name: 
   touchPad: 1
   touchZone:
@@ -24251,7 +24237,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1725501328}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: ab5bb3eb247a4492fa9900f6ac0db050, type: 3}
+  m_Texture: {fileID: 2800000, guid: 31b066fa7b4885041a563e6da37f17f3, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
