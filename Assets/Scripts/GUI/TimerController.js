@@ -8,6 +8,7 @@ private var attackTimer = 0f;
 private var isEnable = false;
 
 private var playerControll : ThirdPersonController;
+private var virtualPad : GameObject;
 
 
 function GetAttackTime() : float
@@ -37,6 +38,9 @@ function Awake()
 	if (!playerControll)
 		Debug.Log("No link to player controller.");
 	
+	virtualPad = GameObject.Find("VirtualPad");
+	if (!virtualPad)
+		Debug.Log("No link to virtualPad.");
 }
 
 function Start()
@@ -48,6 +52,7 @@ function Start()
 	{
 		playerControll.Update();
 		playerControll.SetControllable(false);
+		virtualPad.SetActive(false);
 	}
 }
 
@@ -59,6 +64,7 @@ function Update()
 		if(countDownTimer < 0f)
 		{
 			playerControll.SetControllable(true);
+			virtualPad.SetActive(true);
 			countDownTimer = 0f;
 			attackTimer += Time.deltaTime;
 		}
