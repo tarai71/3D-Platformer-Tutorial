@@ -16240,9 +16240,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 103}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6df91b5b3c493204eb9f7972273ddf13, type: 3}
+  m_Script: {fileID: 11500000, guid: 55111388f0a47c94788094ca03d0f68d, type: 3}
   m_Name: 
-  countDownScale: 1.39999998
+  countDownScale: 1
 --- !u!1 &26236174
 GameObject:
   m_ObjectHideFlags: 0
@@ -16407,7 +16407,7 @@ Transform:
   m_GameObject: {fileID: 77928412}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -200, y: -50, z: 92}
-  m_LocalScale: {x: 300, y: 1, z: 300}
+  m_LocalScale: {x: 1000, y: 1, z: 1000}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!65 &77928414
@@ -18524,17 +18524,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 987ab15eb27a2cc4ebc618b4de00a55b, type: 3}
   m_Name: 
-  touchPad: 0
-  touchZone:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  deadZone: {x: 0, y: 0}
-  normalize: 0
-  position: {x: 0, y: 0}
-  tapCount: 0
 --- !u!131 &435263012
 GUITexture:
   m_ObjectHideFlags: 0
@@ -21981,17 +21970,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 987ab15eb27a2cc4ebc618b4de00a55b, type: 3}
   m_Name: 
-  touchPad: 1
-  touchZone:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  deadZone: {x: 0, y: 0}
-  normalize: 0
-  position: {x: 0, y: 0}
-  tapCount: 0
 --- !u!131 &1344738188
 GUITexture:
   m_ObjectHideFlags: 0
@@ -23138,17 +23116,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 987ab15eb27a2cc4ebc618b4de00a55b, type: 3}
   m_Name: 
-  touchPad: 1
-  touchZone:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  deadZone: {x: 0, y: 0}
-  normalize: 0
-  position: {x: 0, y: 0}
-  tapCount: 0
 --- !u!131 &1536307120
 GUITexture:
   m_ObjectHideFlags: 0
@@ -24289,17 +24256,6 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 987ab15eb27a2cc4ebc618b4de00a55b, type: 3}
   m_Name: 
-  touchPad: 1
-  touchZone:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 0
-    height: 0
-  deadZone: {x: 0, y: 0}
-  normalize: 0
-  position: {x: 0, y: 0}
-  tapCount: 0
 --- !u!131 &1725501331
 GUITexture:
   m_ObjectHideFlags: 0

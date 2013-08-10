@@ -3,6 +3,7 @@
 // This script handles the in-game HUD, showing the lives, number of fuel cells remaining, etc.
 
 var style: GUIStyle;
+var style2: GUIStyle;
 var guiSkin: GUISkin;
 var nativeVerticalResolution = 1200.0;
 
@@ -90,9 +91,14 @@ function OnGUI ()
 	{
 		if(timerInfo)
 		{
-			DrawLabelTopAligned( timerOffset, "Time : " + Mathf.Round(timerInfo.GetAttackTime()*100)/100 );
-			
 			var scaledResolutionWidth = nativeVerticalResolution / Screen.height * Screen.width;
+			
+			DrawLabelTopAligned( timerOffset, "Time : " + Mathf.Round(timerInfo.GetAttackTime()*100)/100 );
+			if(!timerInfo.GetEnable())
+			{
+				GUI.Label(Rect (scaledResolutionWidth/2f-120f, nativeVerticalResolution/2f-120f, 300f, 300f), "" + Mathf.Round(timerInfo.GetAttackTime()*100)/100, style2 );
+			}
+			
 			if(timerInfo.GetCountDown() > 0f)
 			{
 				if(parseInt(timerInfo.GetCountDown()) > 0)

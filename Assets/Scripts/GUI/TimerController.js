@@ -31,6 +31,11 @@ function StopTimer()
 	isEnable = false;
 }
 
+function GetEnable() : boolean
+{
+	return isEnable;
+}
+
 // Cache link to player's state management script for later use.
 function Awake()
 {
