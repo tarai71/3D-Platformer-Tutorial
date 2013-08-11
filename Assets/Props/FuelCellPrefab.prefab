@@ -291,7 +291,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -3334,44 +3334,44 @@ Transform:
   m_LocalPosition: {x: 84.1057053, y: -19.6488533, z: -69.8092194}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 181}
-  - {fileID: 185}
-  - {fileID: 188}
-  - {fileID: 191}
-  - {fileID: 194}
-  - {fileID: 197}
-  - {fileID: 200}
-  - {fileID: 203}
-  - {fileID: 206}
-  - {fileID: 209}
-  - {fileID: 212}
-  - {fileID: 215}
-  - {fileID: 218}
-  - {fileID: 221}
-  - {fileID: 224}
-  - {fileID: 227}
-  - {fileID: 230}
-  - {fileID: 233}
-  - {fileID: 236}
-  - {fileID: 239}
   - {fileID: 242}
-  - {fileID: 245}
-  - {fileID: 248}
-  - {fileID: 251}
-  - {fileID: 254}
-  - {fileID: 257}
+  - {fileID: 197}
+  - {fileID: 236}
+  - {fileID: 293}
+  - {fileID: 233}
+  - {fileID: 185}
+  - {fileID: 200}
+  - {fileID: 221}
   - {fileID: 260}
-  - {fileID: 263}
-  - {fileID: 266}
   - {fileID: 269}
+  - {fileID: 218}
+  - {fileID: 206}
+  - {fileID: 281}
+  - {fileID: 181}
+  - {fileID: 266}
+  - {fileID: 290}
+  - {fileID: 230}
+  - {fileID: 254}
+  - {fileID: 194}
+  - {fileID: 278}
+  - {fileID: 209}
+  - {fileID: 245}
+  - {fileID: 284}
+  - {fileID: 251}
+  - {fileID: 191}
+  - {fileID: 248}
+  - {fileID: 257}
+  - {fileID: 224}
+  - {fileID: 188}
+  - {fileID: 239}
+  - {fileID: 215}
+  - {fileID: 212}
+  - {fileID: 287}
   - {fileID: 272}
   - {fileID: 275}
-  - {fileID: 278}
-  - {fileID: 281}
-  - {fileID: 284}
-  - {fileID: 287}
-  - {fileID: 290}
-  - {fileID: 293}
+  - {fileID: 263}
+  - {fileID: 203}
+  - {fileID: 227}
   m_Father: {fileID: 183}
 --- !u!4 &183
 Transform:
@@ -15450,7 +15450,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15465,7 +15465,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15480,7 +15480,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15495,7 +15495,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15510,7 +15510,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15525,7 +15525,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15540,7 +15540,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15555,7 +15555,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15570,7 +15570,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15585,7 +15585,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15600,7 +15600,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15615,7 +15615,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15630,7 +15630,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15645,7 +15645,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15660,7 +15660,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15675,7 +15675,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15690,7 +15690,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15705,7 +15705,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1011
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15720,7 +15720,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15735,7 +15735,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15750,7 +15750,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15765,7 +15765,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15780,7 +15780,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15795,7 +15795,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15810,7 +15810,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15825,7 +15825,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15840,7 +15840,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15855,7 +15855,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15870,7 +15870,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15885,7 +15885,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15900,7 +15900,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15915,7 +15915,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15930,7 +15930,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15945,7 +15945,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15960,7 +15960,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15975,7 +15975,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15990,7 +15990,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16005,7 +16005,7 @@ MonoBehaviour:
   pickupType: 1
   amount: 1
   sound: {fileID: 8300000, guid: 3d6abf1ec08334c73951fdf8f1f28a4b, type: 3}
-  soundVolume: 10
+  soundVolume: 200
 --- !u!114 &1031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16064,6 +16064,65 @@ MonoBehaviour:
       m_Bottom: 0
     m_Font: {fileID: 0}
     m_FontSize: 800
+    m_FontStyle: 0
+    m_Alignment: 4
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  style2:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: .970149279, g: .723890722, b: .043439541, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 12800000, guid: db722489412ff468c8e88814f330c391, type: 3}
+    m_FontSize: 600
     m_FontStyle: 0
     m_Alignment: 4
     m_WordWrap: 0
@@ -16230,7 +16289,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 86}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bae38961ee3aab4db79c642f56fcf82, type: 3}
+  m_Script: {fileID: 11500000, guid: 64fe2360635c5614fb56d7b72abb55bb, type: 3}
   m_Name: 
 --- !u!114 &1036
 MonoBehaviour:
@@ -16550,7 +16609,7 @@ MonoBehaviour:
   pickupType: 0
   amount: 3
   sound: {fileID: 8300000, guid: 3d64bea8d9a6346f59547d44c291afd6, type: 3}
-  soundVolume: 2
+  soundVolume: 200
 --- !u!1 &127207158
 GameObject:
   m_ObjectHideFlags: 0
@@ -18496,7 +18555,7 @@ GameObject:
   - 4: {fileID: 435263010}
   - 131: {fileID: 435263012}
   - 114: {fileID: 435263011}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: move
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18522,8 +18581,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 435263009}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 987ab15eb27a2cc4ebc618b4de00a55b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0fb10c595af974ea6ba0313a749d5c55, type: 3}
   m_Name: 
+  touchPad: 0
+  touchZone:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  deadZone: {x: 0, y: 0}
+  normalize: 0
+  position: {x: 0, y: 0}
+  tapCount: 0
 --- !u!131 &435263012
 GUITexture:
   m_ObjectHideFlags: 0
@@ -18531,7 +18601,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 435263009}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 31b066fa7b4885041a563e6da37f17f3, type: 3}
+  m_Texture: {fileID: 2800000, guid: ab5bb3eb247a4492fa9900f6ac0db050, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -19209,7 +19279,7 @@ MonoBehaviour:
   pickupType: 0
   amount: 3
   sound: {fileID: 8300000, guid: 3d64bea8d9a6346f59547d44c291afd6, type: 3}
-  soundVolume: 2
+  soundVolume: 200
 --- !u!1 &652770703
 GameObject:
   m_ObjectHideFlags: 0
@@ -20184,7 +20254,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 845443538}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: VirtualPad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20448,7 +20518,7 @@ Camera:
   m_Depth: 10
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294967039
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
@@ -21024,6 +21094,10 @@ Prefab:
       propertyPath: m_Name
       value: CopperSpawn1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4b8e4ed6776e046488c7417603b5927f, type: 2}
+      propertyPath: spawnRange
+      value: 44.7000008
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4b8e4ed6776e046488c7417603b5927f, type: 2}
   m_RootGameObject: {fileID: 2019525359}
@@ -21508,7 +21582,7 @@ MonoBehaviour:
   pickupType: 0
   amount: 3
   sound: {fileID: 8300000, guid: 3d64bea8d9a6346f59547d44c291afd6, type: 3}
-  soundVolume: 2
+  soundVolume: 200
 --- !u!1001 &1201713686
 Prefab:
   m_ObjectHideFlags: 0
@@ -21931,7 +22005,7 @@ MonoBehaviour:
   pickupType: 0
   amount: 3
   sound: {fileID: 8300000, guid: 3d64bea8d9a6346f59547d44c291afd6, type: 3}
-  soundVolume: 2
+  soundVolume: 200
 --- !u!1 &1344738185
 GameObject:
   m_ObjectHideFlags: 0
@@ -21942,7 +22016,7 @@ GameObject:
   - 4: {fileID: 1344738186}
   - 131: {fileID: 1344738188}
   - 114: {fileID: 1344738187}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21968,8 +22042,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1344738185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 987ab15eb27a2cc4ebc618b4de00a55b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0fb10c595af974ea6ba0313a749d5c55, type: 3}
   m_Name: 
+  touchPad: 1
+  touchZone:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  deadZone: {x: 0, y: 0}
+  normalize: 0
+  position: {x: 0, y: 0}
+  tapCount: 0
 --- !u!131 &1344738188
 GUITexture:
   m_ObjectHideFlags: 0
@@ -21977,7 +22062,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1344738185}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 31b066fa7b4885041a563e6da37f17f3, type: 3}
+  m_Texture: {fileID: 2800000, guid: ab5bb3eb247a4492fa9900f6ac0db050, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .501960814}
   m_PixelInset:
     serializedVersion: 2
@@ -23088,7 +23173,7 @@ GameObject:
   - 4: {fileID: 1536307118}
   - 131: {fileID: 1536307120}
   - 114: {fileID: 1536307119}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: jump
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23114,8 +23199,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1536307117}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 987ab15eb27a2cc4ebc618b4de00a55b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0fb10c595af974ea6ba0313a749d5c55, type: 3}
   m_Name: 
+  touchPad: 1
+  touchZone:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  deadZone: {x: 0, y: 0}
+  normalize: 0
+  position: {x: 0, y: 0}
+  tapCount: 0
 --- !u!131 &1536307120
 GUITexture:
   m_ObjectHideFlags: 0
@@ -23123,7 +23219,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1536307117}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 31b066fa7b4885041a563e6da37f17f3, type: 3}
+  m_Texture: {fileID: 2800000, guid: ab5bb3eb247a4492fa9900f6ac0db050, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -24228,7 +24324,7 @@ GameObject:
   - 4: {fileID: 1725501329}
   - 131: {fileID: 1725501331}
   - 114: {fileID: 1725501330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: punch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24254,8 +24350,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1725501328}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 987ab15eb27a2cc4ebc618b4de00a55b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0fb10c595af974ea6ba0313a749d5c55, type: 3}
   m_Name: 
+  touchPad: 1
+  touchZone:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  deadZone: {x: 0, y: 0}
+  normalize: 0
+  position: {x: 0, y: 0}
+  tapCount: 0
 --- !u!131 &1725501331
 GUITexture:
   m_ObjectHideFlags: 0
@@ -24263,7 +24370,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1725501328}
   m_Enabled: 1
-  m_Texture: {fileID: 2800000, guid: 31b066fa7b4885041a563e6da37f17f3, type: 3}
+  m_Texture: {fileID: 2800000, guid: ab5bb3eb247a4492fa9900f6ac0db050, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -25083,7 +25190,7 @@ MonoBehaviour:
   pickupType: 0
   amount: 3
   sound: {fileID: 8300000, guid: 3d64bea8d9a6346f59547d44c291afd6, type: 3}
-  soundVolume: 2
+  soundVolume: 200
 --- !u!1 &1812654528
 GameObject:
   m_ObjectHideFlags: 0
@@ -25928,7 +26035,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5eb8028b73a7c4b98a00f4c4332f470c, type: 3}
   m_Name: 
-  spawnRange: 65
+  spawnRange: 44.7000008
   gizmoName: Copper
   enemyPrefab: {fileID: 100002, guid: 95c8a726a89a54de68f6623ec2eb94f4, type: 2}
 --- !u!1 &2039146680
@@ -26114,12 +26221,12 @@ Transform:
   m_LocalPosition: {x: -201.169769, y: 55.5218277, z: 173.179321}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2135792918}
-  - {fileID: 1808538319}
-  - {fileID: 1344364093}
-  - {fileID: 1179632690}
   - {fileID: 123570875}
   - {fileID: 640226098}
+  - {fileID: 1179632690}
+  - {fileID: 1808538319}
+  - {fileID: 2135792918}
+  - {fileID: 1344364093}
   m_Father: {fileID: 0}
 --- !u!1 &2092849497
 GameObject:
@@ -26557,4 +26664,4 @@ MonoBehaviour:
   pickupType: 0
   amount: 3
   sound: {fileID: 8300000, guid: 3d64bea8d9a6346f59547d44c291afd6, type: 3}
-  soundVolume: 2
+  soundVolume: 200
