@@ -37,9 +37,12 @@ function Awake()
 	if (!playerInfo)
 		Debug.Log("No link to player's state manager.");
 
-	timerInfo = FindObjectOfType(TimerController); 
-	if (!timerInfo)
-		Debug.Log("No link to timer info");
+	if(Application.loadedLevelName == "TimeAttack")
+	{
+		timerInfo = FindObjectOfType(TimerController); 
+		if (!timerInfo)
+			Debug.Log("No link to timer info");
+	}
 }
 
 function Start()

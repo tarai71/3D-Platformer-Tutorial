@@ -19,10 +19,13 @@ private var remainingItems : int;	// total number to pick up on this level. Grab
 
 function Awake()
 {
-	timerInfo = FindObjectOfType(TimerController); 
-	if (!timerInfo)
-		Debug.Log("No link to timer info");
-	
+	if(Application.loadedLevelName == "TimeAttack")
+	{
+		timerInfo = FindObjectOfType(TimerController); 
+		if (!timerInfo)
+			Debug.Log("No link to timer info");
+	}
+		
 	levelStateMachine = FindObjectOfType(LevelStatus);
 	if (!levelStateMachine)
 		Debug.Log("No link to Level Status");
@@ -123,5 +126,9 @@ function Die ()
 function LevelCompleted()
 {
 	levelStateMachine.LevelCompleted();
-	timerInfo.StopTimer();
+
+	if(Application.loadedLevelName == "TimeAttack")
+	{
+		timerInfo.StopTimer();
+	}
 }
